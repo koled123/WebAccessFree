@@ -1,0 +1,277 @@
+/* Define color variables */
+:root {
+    --primary-text-color: #fff;
+    --secondary-background-color: #014b80   ;
+}
+
+/* Global styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    color: var(--primary-text-color);
+}
+
+/* Navbar */
+.navbar {
+    background-color: var(--secondary-background-color);
+    position: relative;
+    color: var(--primary-text-color) !important;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.nav-item .nav-link {
+    color: var(--primary-text-color);
+}
+
+.text-dark {
+    color: #000 !important;
+}
+
+/* Footer */
+.footer {
+    background-color: var(--secondary-background-color);
+    color: var(--primary-text-color);
+    padding: 20px 0;
+    text-align: center;
+}
+
+
+/* Container with Margin Top */
+.container.mt-4 {
+    padding: 20px;
+    color: var(--primary-text-color);
+}
+
+/* Wavy Jumbotron */
+/* Wavy Jumbotron Styles */
+/* Center the text and image in the middle of the jumbotron */
+.jumbotron {
+    background: transparent;
+    background-size: 200% 200%;
+    margin-top: 20px;
+    padding: 120px 0; /* Increase the top padding to vertically center the content */
+    color: #000;
+    font-family: 'Playfair Display', serif;
+    text-align: center; /* Center-align text */
+}
+
+.jumbotron-text {
+    padding-bottom: 20px; /* Reduce the padding to overlap text and image */
+}
+
+.jumbotron .row {
+    align-items: center; /* Vertically center the row content */
+}
+
+/* Text inside the jumbotron */
+.jumbotron .col-md-6.text-left {
+    text-align: center; /* Center-align text */
+}
+
+/* Image inside the jumbotron */
+.jumbotron .col-md-6 {
+    text-align: center; /* Center-align image */
+}
+
+/* Adjust the image size */
+.img-fluid.jumbotron-img {
+    max-width: 80%; /* Reduce the image size as needed */
+    position: relative; /* Position the image relative to its container */
+    top: -50px; /* Move the image up slightly to overlap text */
+}
+
+
+.home-heading{
+    margin-top: 50px;
+    font-size: 50px;
+    color: #000
+}
+
+#changing-heading {
+    font-size: 70px;
+}
+
+.mt-2 {
+    color: var(--primary-text-color);
+    background-color: #154734;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px
+}
+
+#recent-disasters-heading{
+    color: var(--primary-text-color);
+}
+
+/* Apply a golden gradient background to the right box */
+.golden-gradient-bg {
+    background-image: linear-gradient(45deg, #b39702, #f2e07e); /* Adjust the gradient colors as needed */
+    color: #fff; /* Set text color to white for better visibility */
+}
+
+/* Updated styles for the wide rectangular block */
+.wide-rectangular-block {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    margin-top: 50px;
+    transition: transform 0.2s;
+}
+
+.wide-rectangular-block:hover{
+    scale: 1.05;
+}
+
+.wide-rectangular-content {
+    flex: 1;
+}
+
+.wide-rectangular-content h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.wide-rectangular-content p {
+    font-size: 16px;
+}
+
+.wide-rectangular-image {
+    flex: 1;
+    padding-left: 20px;
+    text-align: center;
+}
+
+.wide-rectangular-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* Clickable Card */
+.clickable-card {
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+    height: 100%;
+}
+
+.clickable-card:hover {
+    transform: scale(1.05);
+}
+
+/* Card Body */
+.card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    height: 200px; /* Ensure the card body takes up the full card height */
+}
+
+/* Card Title */
+.card-title {
+    margin: 0;
+}
+
+/* Alert Card */
+.alert-card {
+    transition: transform 0.2s ease-in-out;
+    height: 200px; 
+    color: #fff; 
+}
+
+.home-card {
+    text-decoration: none;
+}
+
+.alert-card:hover {
+    transform: scale(1.05);
+}
+
+.white-background-card {
+    transition: transform 0.2s ease-in-out;
+    height: 200px;
+}
+
+.white-background-card:hover {
+    transform: scale(1.05);
+}
+
+.rounded-circle {
+    background-color: #154734;
+}
+
+.rounded-circle-image {
+    width: 100%; /* Set the width to 100% to cover the entire circle */
+    height: 100%; /* Set the height to 100% to cover the entire circle */
+    object-fit: cover; /* Ensure the image covers the entire space without distortion */
+    border-radius: 50%; /* Apply a circular mask */
+}
+
+.rounded-circle-link {
+    text-decoration: none;
+    margin:20px; 
+}
+
+.rounded-circle-link:hover .rounded-circle {
+    transform: scale(1.1); 
+    transition: transform 0.3s ease; }
+
+.rounded-circle-link:hover .mt-2 {
+    color: #007bff; 
+    transition: color 0.3s ease;
+}
+
+.list-group {
+    padding: 20px;
+}
+
+#questions {
+    background-color: #f7f7f7;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    max-width: 600px; /* Limit the width of the quiz container */
+    margin: 0 auto; /* Center the quiz container horizontally */
+    margin-top: 100px;
+}
+
+#questions h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#quiz-form ol {
+    list-style-type: decimal;
+    margin-left: 20px;
+}
+
+#quiz-form li {
+    margin-bottom: 20px;
+}
+
+/* Style the submit button */
+#submit-button {
+    background-color: #007bff; /* Blue color */
+    color: #fff; /* White text */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#submit-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Style the correct answer display */
+#results {
+    font-weight: bold;
+    margin-top: 20px;
+}
